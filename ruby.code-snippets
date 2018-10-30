@@ -1,0 +1,12 @@
+{
+  "Setter": {
+    "prefix": "setter",
+    "body": [
+      "def ${element}= ${element}",
+      "\t@${element} = ${element}",
+      "end"
+    ],
+    // "scope": "ruby, rby, rb",
+    "description": "A Setter Method"
+  }
+}
