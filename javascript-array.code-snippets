@@ -29,5 +29,25 @@
     ],
     "scope": "javascript",
     "description": "Complete Array.reduce(), with options"
+  },
+
+  // Simple Filter
+  "Simple Filter": {
+    "prefix": "filter simple",
+    "body": [
+      "${1:array}.filter( (${2:element}) => {",
+      "\t${0}",
+      "})"
+    ],
+    "description": "A Simple Array.filter()",
+    "scope": "javascript"
+  },
+
+  // Tiny Filter
+  "Tiny Filter": {
+    "prefix": "filter tiny",
+    "body": "${1:array}.filter(${2:ele} => ${0})",
+    "description": "A Compacted version of Array.filter()",
+    "scope": "javascript"
   }
 }
