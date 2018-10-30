@@ -1,0 +1,76 @@
+{
+	// Console Log for Javascript
+  "Console Log": {
+    "prefix": "clog",
+    "body": "console.log('$0')",
+    "scope": "javascript",
+    "description": "Log output to console"
+  },
+
+  // Console Log, but with option for Console Error or Console Warning
+  "Console Choice": {
+    "prefix": "conc",
+    "body": "console.${1|log,warning,error|}('$0')",
+    "scope": "javascript",
+    "description": "Log statement with choices"
+  },
+
+  // Very simple Array.reduce()
+  "Array Reduce (Simple)": {
+    "prefix": "reduce simple",
+    "body": [
+      "${arr}.reduce( (acc, cur) => {",
+      "\t${0}",
+      "}, ${initValue})"
+    ],
+    "scope": "javascript",
+    "description": "Simple Array.reduce()"
+  },
+
+  // Tiny Array.reduce
+  "Array Reduce (Tiny)": {
+    "prefix": "reduce tiny",
+    "body": "${arr}.reduce( (acc, cur) => ${0}, ${initValue})",
+    "scope": "javascript",
+    "description": "Small and simplified Array.reduce()"
+  },
+
+  // Array.reduce with options
+  "Array Reduce (Options)": {
+    "prefix": "reduce opt",
+    "body": [
+      "${1: arr}.reduce( ${2|(acc\\, cur),(acc\\, cur\\, curInd),(acc\\, cur\\, curInd\\, arr)|} => {",
+      "\t${0}",
+      "}, ${initValue})"
+    ],
+    "scope": "javascript",
+    "description": "Complete Array.reduce(), with options"
+  },
+
+  // Create Default HTML Document
+  "Create HTML": {
+    "prefix": "<!",
+    "body": [
+      "<!DOCTYPE html>",
+      "<html lang=\"en\">",
+      "<head>",
+      "\t<meta charset=\"UTF-8\">",
+      "\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+      // "\t<meta http-equiv=\"X-UA-Compatible\", content=\"iewedge\">",
+      "\t<title>${DocumentTitle}</title>",
+      "</head>",
+      "<body>",
+      "\t${0}",
+      "</body>",
+      "</html>",
+    ],
+    "scope": "html",
+    "description": "Create basic HTML Document"
+  },
+
+  "Create `": {
+    "prefix": "tic",
+    "body": "`${0}`",
+    "description": "Create backtics"
+  }
+}

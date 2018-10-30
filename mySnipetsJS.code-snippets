@@ -1,0 +1,17 @@
+{
+	// Console Log for Javascript
+  "Console Log": {
+    "prefix": "clog",
+    "body": "console.log('$0')",
+    "scope": "javascript",
+    "description": "Log output to console"
+  },
+
+  // Console Log, but with option for Console Error or Console Warning
+  "Console Choice": {
+    "prefix": "conc",
+    "body": "console.${1|log,warning,error|}('$0')",
+    "scope": "javascript",
+    "description": "Log statement with choices"
+  }
+}

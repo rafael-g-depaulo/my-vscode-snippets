@@ -1,0 +1,8 @@
+{
+  // Creates backtics
+  "Create ``": {
+    "prefix": "tic",
+    "body": "`${0}`",
+    "description": "Create backtics"
+  }
+}
