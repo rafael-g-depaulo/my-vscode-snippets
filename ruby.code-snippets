@@ -8,5 +8,14 @@
     ],
     // "scope": "ruby, rby, rb",
     "description": "A Setter Method"
+  },
+  "Class": {
+    "prefix": "class",
+    "body": [
+      "class ${1:ClassName}",
+      "\tdef initialize${0}",
+      "\tend",
+      "end"
+    ]
   }
 }
